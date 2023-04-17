@@ -38,7 +38,7 @@ class BinarySearchTree {
       if (!node) {
         return false;
       }
-      if ((node.data = value)) {
+      if (node.data == value) {
         return true;
       }
       return value < node.data
@@ -119,7 +119,7 @@ class BinarySearchTree {
   }
 
   max() {
-    return recursiveMax(this.root);
+    return recursiveMax(this.treeRoot);
 
     function recursiveMax(node) {
       if (!node) {
