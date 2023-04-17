@@ -28,6 +28,8 @@ function removeKFromList(l, k) {
   while (currentItem) {
     if (currentItem.value === k && !previosItem) {
       l = currentItem.next;
+      currentItem = currentItem.next;
+      continue;
     } else if (currentItem.value === k) {
       previosItem.next = currentItem.next;
       currentItem = currentItem.next;
